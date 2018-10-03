@@ -22,20 +22,7 @@ description: "知识与学问"
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 	<!-- //Web-Fonts -->
 
-	<script src="js/modernizr.custom.js"></script>	
-
-<style type="text/css">
-.style1 {
-	margin: 50px 0 50px;
-	text-align: center;
-}
-.style2 {
-	font-weight: normal;
-}
-.style3 {
-	color: #FFFFFF;
-}
-</style>
+	<script src="js/modernizr.custom.js"></script>
 
 </head>
 <body>
@@ -146,7 +133,7 @@ description: "知识与学问"
                 <p>Repaint List</p>
 
                 <div class="style1">
-                	{% for tag in site.tags.涂装 %}
+                	{% for tag in site.tags.[涂装] %}
 					{% for post in tag[1] %}
 						<div class="col-md-4 cover-top-grid slideanim">
 		                    <div class="column-wrap clearfix">
@@ -169,7 +156,7 @@ description: "知识与学问"
                 <p>Scenery List</p>
 
                 <div class="style1">
-                	{% for tag in site.tags.地景 %}
+                	{% for tag in site.tags.[地景] %}
 					{% for post in tag[1] %}
 						<div class="col-md-4 cover-top-grid slideanim">
 		                    <div class="column-wrap clearfix">
@@ -192,7 +179,7 @@ description: "知识与学问"
                 <p>Video List</p>
 
                 <div class="style1">
-                	{% for tag in site.tags.短片 %}
+                	{% for tag in site.tags.[短片] %}
 					{% for post in tag[1] %}
 						<div class="col-md-4 cover-top-grid slideanim">
 		                    <div class="column-wrap clearfix">
