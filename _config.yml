@@ -3,7 +3,7 @@ title: 8183 Studio # 你的博客名字，可以定义修订
 header-img: "img/green.jpg"
 tagline: "cn"  
 description: "8183Studio"  # 一句话描述你的博客
-url: "https://8183Studio.github.io"  # 此处填写你的博客地址 
+url: "https://8183studio.github.io/"  # 此处填写你的博客地址 
 
 
 # Data
@@ -37,7 +37,7 @@ defaults:
       type: "posts"
     values:
       layout: "product"
-      author: "Allen W." # 你的名字
+      author: 
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
 
