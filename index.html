@@ -133,8 +133,7 @@ description: "知识与学问"
                 <p>Repaint List</p>
 
                 <div class="style1">
-                	{% for tag in site.tags."涂装" %}
-					{% for post in tag[1] %}
+					{% for post in tag[涂装] %}
 						<div class="col-md-4 cover-top-grid slideanim">
 		                    <div class="column-wrap clearfix">
 		                        <div class="column">
@@ -142,7 +141,6 @@ description: "知识与学问"
 		                        </div>
 		                    </div>
 		                </div>
-					{% endfor %}
 					{% endfor %}
 				</div>
             </div>
@@ -156,8 +154,7 @@ description: "知识与学问"
                 <p>Scenery List</p>
 
                 <div class="style1">
-                	{% for tag in site.tags."地景" %}
-					{% for post in tag[1] %}
+					{% for post in tag[地景] %}
 						<div class="col-md-4 cover-top-grid slideanim">
 		                    <div class="column-wrap clearfix">
 		                        <div class="column">
@@ -165,7 +162,6 @@ description: "知识与学问"
 		                        </div>
 		                    </div>
 		                </div>
-					{% endfor %}
 					{% endfor %}
 				</div>
             </div>
@@ -179,8 +175,7 @@ description: "知识与学问"
                 <p>Video List</p>
 
                 <div class="style1">
-                	{% for tag in site.tags."短片" %}
-					{% for post in tag[1] %}
+					{% for post in tag[短片] %}
 						<div class="col-md-4 cover-top-grid slideanim">
 		                    <div class="column-wrap clearfix">
 		                        <div class="column">
@@ -188,7 +183,6 @@ description: "知识与学问"
 		                        </div>
 		                    </div>
 		                </div>
-					{% endfor %}
 					{% endfor %}
 				</div>
             </div>
