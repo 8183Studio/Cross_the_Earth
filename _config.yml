@@ -1,9 +1,9 @@
 # Site settings
-title: 杂谈 # 你的博客名字，可以定义修订
+title: 8183 Studio # 你的博客名字，可以定义修订
 header-img: "img/green.jpg"
 tagline: "cn"  
-description: "老王的杂谈网"  # 一句话描述你的博客
-url: "https://allen5261.github.io"  # 此处填写你的博客地址 
+description: "8183Studio"  # 一句话描述你的博客
+url: "https://8183Studio.github.io"  # 此处填写你的博客地址 
 
 
 # Data
@@ -36,7 +36,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "product"
       author: "Allen W." # 你的名字
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
