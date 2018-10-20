@@ -1,351 +1,41 @@
 ---
+layout: page
 description: "知识与学问"
 ---
-<!DOCTYPE html>
-<html>
-<head>
-<title>Home</title>
-<!-- For-Mobile-Apps -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Tradeaux a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //For-Mobile-Apps -->
 
-	<!-- Bootstrap-Core-CSS --> <link href="css/bootstrap.min.css" rel="stylesheet">
-	<!-- Custom-Theme-Styling --> <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />   
-	<!-- Owl-Carousel-Styling --> <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
-
-	<!-- Web-Fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-	<!-- //Web-Fonts -->
-
-	<script src="js/modernizr.custom.js"></script>
-
-</head>
-<body>
-	<!-- Header-Starts-Here -->
-    <div class="header">
-
-        <div class="container">
-        <!-- Navigation -->
-		    <nav class="navbar navbar-inverse">
-		            <!-- Brand and toggle get grouped for better mobile display -->
-		            <div class="navbar-header">
-		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		                    <span class="sr-only">Toggle navigation</span>
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                    <span class="icon-bar"></span>
-		                </button>
-		            </div>
-		            <!-- Collect the nav links, forms, and other content for toggling -->
-		            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		                <ul class="nav navbar-nav">
-		                    <li class="active cl-effecta7"><a href="#"><img src="images/LOGO.png" height="30em"></a></li>
-		                    <li class="cl-effecta7 scroll"><a href="#"></a></li>
-			                <li class="cl-effect-7 scroll"><a href="#repaints">涂装</a></li>
-			                <li class="cl-effect-7 scroll"><a href="#sceneries">地景</a></li>
-			                <li class="cl-effect-7 scroll"><a href="#videos">短片</a></li>
-							<li class="cl-effecta7 scroll"><a href="#"></a></li>
-			                <li class="cl-effecta7 scroll"><a href="#"></a></li>
-		                </ul>
-		            </div>
-		            <!-- //Navbar-collapse -->
-		    </nav>
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">            
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:150 }}
         </div>
-        <!-- Slider-Starts-Here -->
-        <div class="slider">
-            <ul class="rslides" id="slider">
+    </a>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
 
-                <li>
-                    <img src="images/1.jpg" alt="Tradeaux">
-                </li>
-                <li>
-                    <img src="images/2.jpg" alt="Tradeaux">
-                </li>
-                <li>
-                    <img src="images/3.jpg" alt="Tradeaux">
-                </li>
-                <li>
-                    <img src="images/4.jpg" alt="Tradeaux">
-                </li>
-                <li>
-                    <img src="images/5.jpg" alt="Tradeaux">
-                </li>
-            </ul>
-        </div>
-        <!-- //Slider-Ends-Here -->        
+<hr>
+{% endfor %}
 
-    </div>
-    <!-- //Header-Ends-Here -->
-
-    <div class="content">
-
-    	<!-- Area-Starts-Here -->
-        <div class="area" id="products">
-		
-			<h1>产品</h1>
-			
-            <div class="container">
-                <div class="area1">
-	                    <a class="cl-effect-7 scroll" href="#repaints">
-	                    <div class="col-md-4 col-sm-4 air slideanim">
-	                        <div class="area-image">
-	                            <img src="images/1.jpg" alt="Tradeaux">
-	                        </div>
-	                        <div class="area-info">
-	                            <h4 class="text-center" style="width: 96%">涂装</h4>
-	                        </div>
-	                    </div></a>
-					
-					<a class="cl-effect-7 scroll" href="#sceneries">
-                    <div class="col-md-4 col-sm-4 sea slideanim">
-                        <div class="area-image">
-                            <img src="images/3.jpg" alt="Tradeaux">
-                        </div>
-                        <div class="area-info">
-                            <h4 style="width: 96%" class="text-center">地景</h4>
-                        </div>
-                    </div></a>
-					
-					<a class="cl-effect-7 scroll" href="#videos">
-                    <div class="col-md-4 col-sm-4 land slideanim">                        
-                        <div class="area-image">
-                            <img src="images/6.jpg" alt="Tradeaux">
-                        </div>
-                        <div class="area-info">
-                            <h4 style="width: 96%" class="text-center">短片</h4>
-                        </div>
-                    </div></a>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>    
-        <!-- //Area-Ends-Here -->
-
-        <!-- Cover-Starts-Here -->
-        <div class="cover" id="repaints">
-            <div class="container">
-                <h3> 涂装列表</h3>
-                <p>Repaint List</p>
-
-                <div class="style1">
-					{% for post in site.categories.repaints %}
-						<div class="col-md-4 cover-top-grid slideanim">
-		                    <div class="column-wrap clearfix">
-		                        <div class="column">
-		                            <a class="caption caption-3" href="{{ post.url }}" data-title="{{ post.title }}" data-description="{{ post.description }}"><img src="{{ post.header-img }}" alt="{{ post.title }}"></a>
-		                        </div>
-		                    </div>
-		                </div>
-					{% endfor %}
-				</div>
-            </div>
-        </div>
-        <!-- //Cover-Ends-Here -->
-
-        <!-- Cover-Starts-Here -->
-        <div class="cover" id="sceneries">
-            <div class="container">
-                <h3> 地景列表</h3>
-                <p>Scenery List</p>
-
-                <div class="style1">
-					{% for post in site.categories.sceneries %}
-						<div class="col-md-4 cover-top-grid slideanim">
-		                    <div class="column-wrap clearfix">
-		                        <div class="column">
-		                            <a class="caption caption-3" href="{{ post.url }}" data-title="{{ post.title }}" data-description="{{ post.description }}"><img src="{{ post.header-img }}" alt="{{ post.title }}"></a>
-		                        </div>
-		                    </div>
-		                </div>
-					{% endfor %}
-				</div>
-            </div>
-        </div>
-        <!-- //Cover-Ends-Here -->
-        
-        <!-- Cover-Starts-Here -->
-        <div class="cover" id="videos">
-            <div class="container">
-                <h3> 短片列表</h3>
-                <p>Video List</p>
-
-                <div class="style1">
-					{% for post in site.categories.videos %}
-						<div class="col-md-4 cover-top-grid slideanim">
-		                    <div class="column-wrap clearfix">
-		                        <div class="column">
-		                            <a class="caption caption-3" href="{{ post.url }}" data-title="{{ post.title }}" data-description="{{ post.description }}"><img src="{{ post.header-img }}" alt="{{ post.title }}"></a>
-		                        </div>
-		                    </div>
-		                </div>
-					{% endfor %}
-				</div>
-            </div>
-        </div>
-        <!-- //Cover-Ends-Here -->
-		
-    	    <!-- Footer-Starts-Here -->
-    <div class="footer">
-
-        <div class="container">
-
-            <div class="footer-info slideanim">
-                                <div class="col-md-3 footer-info-grid address">
-                	<h4>联系我们</h4>
-	                    <ul>
-	                    	<li>Email : <a class="mail" href="mailto:SINO8183@163.com">SINO8183@163.com</a></li>
-	                    	<li>SinoFSX : <a class="mail" href="https://bbs.sinofsx.com/home.php?mod=space&amp;uid=134307">
-							个人主页</a></li>
-	                    </ul>
-                </div>
-            </div>
-            <div class="copyright slideanim">
-                <p>Copyright © 2018. 8183STUDIO</p>
-            </div>
-			<div class="clearfix"></div>
-			<div class="clearfix"></div>
-        </div>
-
-        
-
-    </div>
-    <!-- //Footer-Ends-Here -->
-
-    <!-- Supportive-JavaScript --><script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- Necessary-JS-File-For-Bootstrap --><script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- SmoothScroll-JavaScript -->
-    <script>
-        $(document).ready(function(){
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar li a, .footer a[href='#myPage']").on('click', function(event) {
-
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 900, function(){
-           
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-            });
-          
-            $(window).scroll(function() {
-            $(".slideanim").each(function(){
-                var pos = $(this).offset().top;
-
-                var winTop = $(window).scrollTop();
-                if (pos < winTop + 600) {
-                  $(this).addClass("slide");
-                }
-                });
-            });
-        })
-    </script>
-    <!-- //SmoothScroll-JavaScript -->
-
-    <!-- Slideanim-JavaScript -->
-    <script type="text/javascript">
-        $(window).scroll(function() {
-            $(".slideanim").each(function(){
-                var pos = $(this).offset().top;
-
-                var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                    $(this).addClass("slide");
-                }
-            });
-        });
-    </script>
-    <!-- //Slideanim-JavaScript -->
-
-    <!-- Owl-Carousel-JavaScript -->
-	<script src="js/owl.carousel.js"></script>
-	<script>
-		$(document).ready(function() {
-			$("#owl-demo").owlCarousel ({
-				items : 4,
-				lazyLoad : true,
-				autoPlay : true,
-				pagination : false,
-			});
-		});
-	</script>
-    <!-- //Owl-Carousel-JavaScript -->
-
-    <!-- Banner-Slider-JavaScript -->
-	<script src="js/responsiveslides.min.js"></script>
-	<script>
-		$(function () {
-			$("#slider").responsiveSlides({
-			  auto: true,
-			  nav: true,
-			  speed: 500,
-			  namespace: "callbacks",
-			  pager: true,
-			});
-		  });
-	</script>
-    <!-- //Banner-Slider-JavaScript -->    
-    
-	<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/            
-			$().UItoTop({ easingType: 'easeOutQuart' });            
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-    <!-- //Slide-To-Top JavaScript -->
-	   
-	<!-- Smooth-Scrolling-JavaScript -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-	</script>
-	<!-- //Smooth-Scrolling-JavaScript -->
-	
-	<!-- FlexSlider-JavaScript -->
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            SyntaxHighlighter.all();
-        });
-        $(window).load(function(){
-            $('.flexslider').flexslider({
-                animation: "slide",
-                start: function(slider){
-                    $('body').removeClass('loading');
-                }
-            });
-        });
-    </script>
-    <!-- //FlexSlider-JavaScript -->
-	
-</body>
-</html>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
